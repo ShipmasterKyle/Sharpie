@@ -1,0 +1,132 @@
+html {
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%
+}
+body {
+  margin:0;
+  background-color: #f4cccc;
+}
+
+footer {
+  display: block;
+}
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+a {
+  background-color: transparent;
+}
+a:active,a:hover {
+  outline:0
+}
+a {
+  color:#ff8e03;
+  text-decoration:none;
+  font-family: Ubuntu;
+}
+a:focus,a:hover {
+  color:#ffb050;
+  text-decoration:underline
+}
+a:focus{
+  outline:5px auto -webkit-focus-ring-color;outline-offset:-2px
+}
+b {
+  font-weight: 700;
+}
+
+.button {
+  background-color: #ff8e03; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ff8e03;
+  border-radius: 8px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color:#888;
+  font-family:Dosis;
+  font-weight:500;
+  line-height:1.1
+}
+h1 {
+  font-size:2em;
+  margin:.67em 0;
+  color:#ca0372;
+  font-family: 'Radio Canada';
+}
+
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  background-color:blue;
+}
+p {
+  margin:0 0 10px;
+  color:#999;
+  font-size:14px;
+  font-family: Ubuntu;
+}
+.entry{
+  box-sizing:border-box;
+  padding-bottom:64px
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
